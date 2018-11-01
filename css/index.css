@@ -1,0 +1,226 @@
+/*首页 样式*/
+.index_main .column-wrapper .column1 .column-content {
+  margin-top: 80px;
+}
+.index_main .column-wrapper .column1 .column-content .kcList .kcItem {
+  float: left;
+  width: 285px;
+  height: 420px;
+  padding: 30px 15px;
+  margin-right: 20px;
+  border-radius: 5px;
+  letter-spacing: 0px;
+  background-color: #0798d9;
+}
+.index_main .column-wrapper .column1 .column-content .kcList .kcItem:nth-child(2) {
+  background-color: #e34752;
+}
+.index_main .column-wrapper .column1 .column-content .kcList .kcItem:nth-child(2) .item .key {
+  color: #e34752;
+}
+.index_main .column-wrapper .column1 .column-content .kcList .kcItem:nth-child(3) {
+  background-color: #ffa200;
+}
+.index_main .column-wrapper .column1 .column-content .kcList .kcItem:nth-child(3) .item .key {
+  color: #ffa200;
+}
+.index_main .column-wrapper .column1 .column-content .kcList .kcItem:nth-child(4) {
+  margin-right: 0;
+  background-color: #009d46;
+}
+.index_main .column-wrapper .column1 .column-content .kcList .kcItem:nth-child(4) .item .key {
+  color: #009d46;
+}
+.index_main .column-wrapper .column1 .column-content .kcList .kcItem .kcName {
+  font-size: 28px;
+  line-height: 30px;
+  color: #fffefe;
+  text-align: center;
+}
+.index_main .column-wrapper .column1 .column-content .kcList .kcItem .kcClass {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.index_main .column-wrapper .column1 .column-content .kcList .kcItem .item {
+  margin-top: 10px;
+}
+.index_main .column-wrapper .column1 .column-content .kcList .kcItem .item .key {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  margin-right: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #42bced;
+  background-color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+.index_main .column-wrapper .column1 .column-content .kcList .kcItem .item .value {
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+}
+.index_main .column-wrapper .column1 .column-content .kcList .kcItem .courses .value {
+  font-size: 16px;
+}
+.index_main .column-wrapper .column1 .column-content .btn-audition {
+  display: block;
+  margin: 100px auto 30px;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  font-family: PingFang-SC-Bold;
+  font-size: 20px;
+  color: #ef6d01 !important;
+  text-align: center;
+  border-radius: 5px;
+  border: solid 1px #ef6d01;
+}
+.index_main .column-wrapper .column2 .column-content {
+  margin-top: 50px;
+}
+.index_main .column-wrapper .column2 .column-content .intro {
+  font-size: 18px;
+  line-height: 30px;
+  text-indent: 2em;
+  letter-spacing: 0px;
+  color: #666666;
+  text-align: justify;
+}
+.index_main .column-wrapper .column2 .column-content .btn-more {
+  display: block;
+  margin: 70px auto 0;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  font-family: PingFang-SC-Bold;
+  font-size: 20px;
+  color: #666;
+  border-radius: 5px;
+  border: solid 1px #666;
+  text-align: center;
+}
+.index_main .column-wrapper .column3 .column-content {
+  margin-top: 60px;
+  padding-bottom: 80px;
+}
+.index_main .column-wrapper .column3 .column-content .series {
+  position: relative;
+  text-align: center;
+}
+.index_main .column-wrapper .column3 .column-content .series .textbook {
+  position: absolute;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+.index_main .column-wrapper .column3 .column-content .series .textbook1 {
+  top: 66px;
+  left: 133px;
+  color: #0798d9;
+}
+.index_main .column-wrapper .column3 .column-content .series .textbook2 {
+  top: 72px;
+  right: 190px;
+  color: #e34752;
+}
+.index_main .column-wrapper .column3 .column-content .series .textbook3 {
+  top: 195px;
+  left: 112px;
+  color: #ffa200;
+}
+.index_main .column-wrapper .column3 .column-content .series .textbook4 {
+  top: 193px;
+  right: 62px;
+  color: #009d46;
+}
+.index_main .column-wrapper .column3 .column-content .desc {
+  margin-top: 60px;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #666;
+  text-indent: 2em;
+  text-align: justify;
+}
+.index_main .column-wrapper .column4 .column-content {
+  position: relative;
+  margin-top: 70px;
+}
+.index_main .column-wrapper .column4 .column-content .teacher-swiper {
+  width: 960px;
+  margin: 0 auto;
+}
+.index_main .column-wrapper .column4 .column-content .teacher-swiper .slide .item-teacher .teacher-photo {
+  float: left;
+  margin-right: 50px;
+}
+.index_main .column-wrapper .column4 .column-content .teacher-swiper .slide .item-teacher .teacher-profile {
+  float: left;
+  width: 730px;
+  letter-spacing: 0px;
+}
+.index_main .column-wrapper .column4 .column-content .teacher-swiper .slide .item-teacher .teacher-profile .name {
+  margin-top: 20px;
+  font-family: PingFang-SC-Bold;
+  font-size: 28px;
+  line-height: 1em;
+  color: #333333;
+}
+.index_main .column-wrapper .column4 .column-content .teacher-swiper .slide .item-teacher .teacher-profile .slogan {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1em;
+  color: #666666;
+}
+.index_main .column-wrapper .column4 .column-content .teacher-swiper .slide .item-teacher .teacher-profile .motto {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #333333;
+  text-align: justify;
+}
+.index_main .column-wrapper .column4 .column-content .teacher-swiper .slide .item-teacher:nth-child(2) {
+  margin-top: 70px;
+}
+.index_main .column-wrapper .column4 .column-content .btn-more {
+  display: block;
+  margin: 80px auto 110px;
+  width: 180px;
+  height: 50px;
+  font-family: PingFang-SC-Bold;
+  font-size: 20px;
+  line-height: 50px;
+  letter-spacing: 0px;
+  color: #ef6d01 !important;
+  border-radius: 5px;
+  border: solid 1px #fb8e33;
+  text-align: center;
+  cursor: pointer;
+}
+.index_main .column-wrapper .column4 .column-content .swiper-button-next,
+.index_main .column-wrapper .column4 .column-content .swiper-button-prev {
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.4);
+  outline: none;
+}
+.index_main .column-wrapper .column4 .column-content .swiper-button-next {
+  right: 0;
+  background: url("../img/icon1.png") no-repeat;
+  background-size: cover;
+}
+.index_main .column-wrapper .column4 .column-content .swiper-button-prev {
+  left: 0;
+  background: url("../img/icon2.png") no-repeat;
+  background-size: cover;
+}
+.index_main .banner2 {
+  text-align: center;
+}
+.index_main .shallow-bg {
+  background-color: #f9f9f9;
+}
