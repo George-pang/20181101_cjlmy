@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh">
-
+<!-- 调用swiper callback api 原生实现缩略图swiper切换，tab切换自动轮播时大图第一次显示有bug-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +9,14 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/about_us.css">
+    <link rel="stylesheet" href="css/about_us_native.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <!-- <link rel="stylesheet" href="css/hover-min.css"> -->
     <script src="js/jquery.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/about_us.js"></script>
-    <style>
-
-    </style>
+    <script src="js/about_us_native.js"></script>
 </head>
 
 <body>
@@ -286,19 +283,11 @@
                         </div>
                         <div class="tab-bd">
                             <div class="tab-item tab-item-cur">
-                                <div class="swiper-container gallery-top gallery-top1 big-pic">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide" style="background-image:url(img/img12.png)"></div>
-                                        <div class="swiper-slide" style="background-image:url(img/img13.png)"></div>
-                                        <div class="swiper-slide" style="background-image:url(img/img14.png)"></div>
-                                        <div class="swiper-slide" style="background-image:url(img/img15.png)"></div>
-                                        <div class="swiper-slide" style="background-image:url(img/img16.png)"></div>
-                                        <div class="swiper-slide" style="background-image:url(img/img17.png)"></div>
-                                        <div class="swiper-slide" style="background-image:url(img/img18.png)"></div>
-                                    </div>
+                                <div class="big-pic">
+                                    <img src="" alt="">
                                 </div>
-                                <div class="thumbs-container">
-                                    <div class="swiper-container gallery-thumbs gallery-thumbs1">
+                                <div class="photoSwiper-container">
+                                    <div class="swiper-container photoSwiper photoSwiper1" id="photoSwiper">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <img src="img/img12.png" alt="">
@@ -329,19 +318,11 @@
                                 </div>
                             </div>
                             <div class="tab-item">
-                                <div class="swiper-container gallery-top gallery-top2 big-pic">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide" style="background-image:url(img/img18.png)"></div>
-                                        <div class="swiper-slide" style="background-image:url(img/img17.png)"></div>
-                                        <div class="swiper-slide" style="background-image:url(img/img16.png)"></div>
-                                        <div class="swiper-slide" style="background-image:url(img/img15.png)"></div>
-                                        <div class="swiper-slide" style="background-image:url(img/img14.png)"></div>
-                                        <div class="swiper-slide" style="background-image:url(img/img13.png)"></div>
-                                        <div class="swiper-slide" style="background-image:url(img/img12.png)"></div>
-                                    </div>
+                                <div class="big-pic">
+                                    <img src="" alt="">
                                 </div>
-                                <div class="thumbs-container">
-                                    <div class="swiper-container gallery-thumbs gallery-thumbs2">
+                                <div class="photoSwiper-container">
+                                    <div class="swiper-container photoSwiper photoSwiper2">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <img src="img/img18.png" alt="">

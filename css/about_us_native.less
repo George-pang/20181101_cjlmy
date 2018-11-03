@@ -289,45 +289,28 @@
                 .tab-bd{
                     padding-top:100px; 
                     .tab-item{
-                        position: relative;
                         display: none;
-                        .swiper-container {
-                            margin-left: auto;
-                            margin-right: auto;
-                        }
-                        .swiper-slide {
-                          background-size: cover;
-                          background-position: center;
-                          background-color: #000;
-                        }
-                        .gallery-top{
+                        .big-pic{
                             margin: 0 auto;
                             width: 720px;
-                            height: 480px;
+                            &>img{
+                                width: 100%;
+                                height: auto;
+                            }
                         }
-                        .gallery-thumbs{
+                        .photoSwiper-container{
                             margin-top: 80px;
                             position: relative;
-                            width: 1030px;
-                            box-sizing: border-box;
-                            .swiper-slide{
-                                width: 130px;
-                                // height: 87px;
-                                background-color: #000;
-                                &>img{
-                                    width: 100%;
-                                    opacity: .6;
+                            .photoSwiper{
+                                width: 1030px;
+                                .swiper-slide{
+                                    text-align: center;
+                                    box-sizing: content-box;
+                                }
+                                .swiper-slide-active{
+                                    border: solid 2px #ef6d01!important;
                                 }
                             }
-                            .swiper-slide-thumb-active{
-                                border: solid 2px #ef6d01!important;
-                                &>img{
-                                    opacity: 1;
-                                }
-                            }
-                        }
-                        .thumbs-container{
-                            position: relative;
                             .swiper-button-next,
                             .swiper-button-prev {
                                 width: 18px;

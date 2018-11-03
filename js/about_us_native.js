@@ -58,75 +58,66 @@ $(function () {
     /* 侧边导航栏 end */
 
 
-    /* 教学环境 tab切换 */
+    /* 教学环境 tab切换 */ 
     $(".tab-hd .tab").on("click", function () {
         $(this).addClass("tab-cur").siblings().removeClass("tab-cur");
         var index = $(this).index();
         $(".tab-bd .tab-item").eq(index).addClass("tab-item-cur").siblings().removeClass("tab-item-cur");
         if (index == 0) { //重绘-需要重新初始化swiper
-            var swiper = newSwiper(".gallery-thumbs1", ".gallery-top1");
-            // 鼠标移入轮播图暂停自动播放
-            autoplayStop(swiper, ".gallery-thumbs1");
-            autoplayStart(swiper, ".gallery-thumbs1");
+            var photoSwiper1 = newSwiper(".photoSwiper1");
+            autoplayStop(photoSwiper1, ".photoSwiper1");
+            autoplayStart(photoSwiper1, ".photoSwiper1");
         } else if (index == 1) {
-            var swiper = newSwiper(".gallery-thumbs2", ".gallery-top2");
-            // 鼠标移入轮播图暂停自动播放
-            autoplayStop(swiper, ".gallery-thumbs2");
-            autoplayStart(swiper, ".gallery-thumbs2");
+            var photoSwiper2 = newSwiper(".photoSwiper2");
+            autoplayStop(photoSwiper2, ".photoSwiper2");
+            autoplayStart(photoSwiper2, ".photoSwiper2");
         }
     });
 
-
     // 函数---初始化swiper，参数：选择器--前提：初始化swiper的配置对象参数完全相同
-    function newSwiper(selector1, selector2) {
-        var galleryThumbs = new Swiper(selector1, {
-            spaceBetween: 20,
+    function newSwiper(selector) {
+        var mySwiper = new Swiper(selector, {
+            direction: 'horizontal',
+            loop: true,
             slidesPerView: 7,
-            loop: true,
-            freeMode: true,
-            // allowTouchMove:false, //是否允许触摸滑动
-            centeredSlides: true, //active slide 居中
-            loopedSlides: 7, //looped slides should be the same
-            watchSlidesVisibility: true,
-            watchSlidesProgress: true,
-        });
-        var galleryTop = new Swiper(selector2, {
-            spaceBetween: 10,
-            loop: true,
-            loopedSlides: 7, //looped slides should be the same
+            spaceBetween: 20,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            centeredSlides : true,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            autoplay: {
-                delay: 3000, //3秒切换一次
-                disableOnInteraction: false, //用户操作swiper之后自动切换不会停止
-            },
-            thumbs: {
-                swiper: galleryThumbs,
+            on: {
+                // 当当前Slide切换时执行(activeIndex发生改变)--bug:当点击tab切换重绘swiper时，自动播放第一次切换大图总先显示别图，再显示下一slide的图
+                slideChange: function () {
+                    var index = this.activeIndex;
+                    $(".tab-item-cur .big-pic img")[0].src = $(".tab-item-cur .swiper-slide").eq(index).find("img").get(0).src;
+                },
             },
         });
-        return galleryTop;
+        return mySwiper;
     }
-
-    // 函数-鼠标移入缩略图 暂停自动播放
+    // 函数-鼠标移入swiper暂停自动播放
     function autoplayStop(swiper, selector) {
         $(selector).on("mouseenter", function (event) {
             swiper.autoplay.stop();
             return false;
         });
     }
-    // 函数-鼠标移出缩略图开始自动播放
+    // 函数-鼠标移出swiper开始自动播放
     function autoplayStart(swiper, selector) {
         $(selector).on("mouseleave", function (event) {
             swiper.autoplay.start();
             return false;
         });
     }
-    // 初始化tab切换中当前tab的swiper
-    var swiper = newSwiper(".gallery-thumbs1", ".gallery-top1");
+    // 初始化tab切换中当前tab1的swiper
+    var photoSwiper1 = newSwiper(".photoSwiper1");
     // 鼠标移入轮播图暂停自动播放
-    autoplayStop(swiper, ".gallery-thumbs1");
-    autoplayStart(swiper, ".gallery-thumbs1");
+    autoplayStop(photoSwiper1, ".photoSwiper1");
+    autoplayStart(photoSwiper1, ".photoSwiper1");
 
 });
