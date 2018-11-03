@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>长颈鹿美语--新闻中心</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/pagination.css">
+    <!-- <link rel="stylesheet" href="css/hover-min.css"> -->
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/pagination.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/news.js"></script>
+    <style>
+        #pagination-container{
+            position: absolute;
+            bottom: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-nav">
+        <div class="w1200 nav-bar">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="r-nav">
+                <ul class="web-nav clearfix">
+                    <li class="nav-item">
+                        <a href="index.html" class="item_link">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about_us.html" class="item_link">关于长颈鹿</a>
+                    </li>
+                    <li class="nav-item nav-item-fw">
+                        <a href="course_child.html" class="item_link">开设课程</a>
+                        <div class="fw_menu">
+                            <ul>
+                                <li class="fw_item fw_item_cur"><a class="fw_item_link" href="course_child.html">幼儿启蒙英语</a></li>
+                                <li class="fw_item"><a class="fw_item_link" href="course_children.html">儿童进阶英语</a></li>
+                                <li class="fw_item"><a class="fw_item_link" href="course_juvenile.html">少儿强化英语</a></li>
+                                <li class="fw_item"><a class="fw_item_link" href="course_essence.html">菁英少年英语</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item  item-current">
+                        <a href="news.html" class="item_link">新闻中心</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about_us.html" class="item_link">多元化教学</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about_us.html" class="item_link">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="img/banner7.jpg" alt="">
+        <h3 class="title special-font">长颈鹿动态</h3>
+    </div>
+    <div class="main news_main">
+        <div class="w1200 news-container clearfix">
+            <div class="news-nav special-font">
+                <h3 class="title">
+                    <img src="img/icon7.png" alt="">
+                    <span class="txt">新闻中心</span>
+                </h3>
+                <ul class="news-nav-hd">
+                    <li class="nav-tab nav-tab-cur">
+                        <span class="tab-icon"></span>
+                        <span class="tab-txt">中心新闻</span>
+                    </li>
+                    <li class="nav-tab">
+                        <span class="tab-icon"></span>
+                        <span class="tab-txt">活动新闻</span>
+                    </li>
+                    <li class="nav-tab">
+                        <span class="tab-icon"></span>
+                        <span class="tab-txt">下载中心</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="news-nav-bd">
+                <div class="bd-item bd-item-cur">
+                    <div class="title-row">
+                        <img src="img/icon8.png" alt="" class="icon">
+                        <span class="tab-name">中心新闻<span class="english">/CENTER</span></span>
+                    </div>
+                    <!-- 正文数据渲染容器 -->
+                    <div id="data-container" style="height:610px">
+                        <ul class="news-list">
+                            <li class="news clearfix">
+                                <div class="news-pic">
+                                    <img src="img/img30.png" alt="">
+                                </div>
+                                <div class="news-details">
+                                    <h3 class="news-title special-font">主题教学 | 万圣节要怎么玩才尽兴？</h3>
+                                    <p class="news-summary">
+                                        10/20~10/26 GIRAFFE万圣节主题教学进行中尽情释放心中的「小捣蛋鬼」提前欢享万圣节的精彩
+                                    </p>
+                                    <p class="news-time">
+                                        [2018-10-23]
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="news clearfix">
+                                <div class="news-pic">
+                                    <img src="img/img31.png" alt="">
+                                </div>
+                                <div class="news-details">
+                                    <h3 class="news-title special-font">Hallowest Tickets | 别落了你的万圣西部夜门票</h3>
+                                    <p class="news-summary">
+                                        万圣西部夜的必要装备：左轮手枪x1 弹药x1 筹码x1,门票出炉，请速来领取2018 Hallowest Tickets
+                                    </p>
+                                    <p class="news-time">
+                                        [2018-10-23]
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="news clearfix">
+                                <div class="news-pic">
+                                    <img src="img/img32.png" alt="">
+                                </div>
+                                <div class="news-details">
+                                    <h3 class="news-title special-font">收下这份万圣西部夜着装指南</h3>
+                                    <p class="news-summary">
+                                        如何在万圣夜里大放异彩？收下这份时尚着装指南，用你的「鬼」点子，吹起浓浓西部风，Hallowest! Dress your best!
+                                    </p>
+                                    <p class="news-time">
+                                        [2018-10-21]
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="news clearfix">
+                                <div class="news-pic">
+                                    <img src="img/img33.png" alt="">
+                                </div>
+                                <div class="news-details">
+                                    <h3 class="news-title special-font">织一张网，捕捉你眼底的光</h3>
+                                    <p class="news-summary">
+                                        初秋九月，织一张温柔的网，捕捉你眼底的光。
+                                    </p>
+                                    <p class="news-time">
+                                        [2018-10-21]
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 分页器容器 -->
+                    <div id="pagination-container" class="center-pagination-container"></div>
+                </div>
+                <div class="bd-item">
+                    <div class="title-row">
+                        <img src="img/icon8.png" alt="" class="icon">
+                        <span class="tab-name">活动新闻<span class="english">/ACTIVITY</span></span>
+                    </div>
+                    <ul class="news-list">
+                        <li class="news clearfix">
+                            <div class="news-pic">
+                                <img src="img/img30.png" alt="">
+                            </div>
+                            <div class="news-details">
+                                <h3 class="news-title special-font">主题教学 | 万圣节要怎么玩才尽兴？</h3>
+                                <p class="news-summary">
+                                    10/20~10/26 GIRAFFE万圣节主题教学进行中尽情释放心中的「小捣蛋鬼」提前欢享万圣节的精彩
+                                </p>
+                                <p class="news-time">
+                                    [2018-10-23]
+                                </p>
+                            </div>
+                        </li>
+                        <li class="news clearfix">
+                            <div class="news-pic">
+                                <img src="img/img31.png" alt="">
+                            </div>
+                            <div class="news-details">
+                                <h3 class="news-title special-font">Hallowest Tickets | 别落了你的万圣西部夜门票</h3>
+                                <p class="news-summary">
+                                    万圣西部夜的必要装备：左轮手枪x1 弹药x1 筹码x1,门票出炉，请速来领取2018 Hallowest Tickets
+                                </p>
+                                <p class="news-time">
+                                    [2018-10-23]
+                                </p>
+                            </div>
+                        </li>
+                        <li class="news clearfix">
+                            <div class="news-pic">
+                                <img src="img/img32.png" alt="">
+                            </div>
+                            <div class="news-details">
+                                <h3 class="news-title special-font">收下这份万圣西部夜着装指南</h3>
+                                <p class="news-summary">
+                                    如何在万圣夜里大放异彩？收下这份时尚着装指南，用你的「鬼」点子，吹起浓浓西部风，Hallowest! Dress your best!
+                                </p>
+                                <p class="news-time">
+                                    [2018-10-21]
+                                </p>
+                            </div>
+                        </li>
+                        <li class="news clearfix">
+                            <div class="news-pic">
+                                <img src="img/img33.png" alt="">
+                            </div>
+                            <div class="news-details">
+                                <h3 class="news-title special-font">织一张网，捕捉你眼底的光</h3>
+                                <p class="news-summary">
+                                    初秋九月，织一张温柔的网，捕捉你眼底的光。
+                                </p>
+                                <p class="news-time">
+                                    [2018-10-21]
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bd-item">
+                    <div class="title-row">
+                        <img src="img/icon8.png" alt="" class="icon">
+                        <span class="tab-name">下载中心<span class="english">/DOWNLOAD</span></span>
+                    </div>
+                    <ul class="news-list">
+                        <li class="news clearfix">
+                            <div class="news-pic">
+                                <img src="img/img30.png" alt="">
+                            </div>
+                            <div class="news-details">
+                                <h3 class="news-title special-font">主题教学 | 万圣节要怎么玩才尽兴？</h3>
+                                <p class="news-summary">
+                                    10/20~10/26 GIRAFFE万圣节主题教学进行中尽情释放心中的「小捣蛋鬼」提前欢享万圣节的精彩
+                                </p>
+                                <p class="news-time">
+                                    [2018-10-23]
+                                </p>
+                            </div>
+                        </li>
+                        <li class="news clearfix">
+                            <div class="news-pic">
+                                <img src="img/img31.png" alt="">
+                            </div>
+                            <div class="news-details">
+                                <h3 class="news-title special-font">Hallowest Tickets | 别落了你的万圣西部夜门票</h3>
+                                <p class="news-summary">
+                                    万圣西部夜的必要装备：左轮手枪x1 弹药x1 筹码x1,门票出炉，请速来领取2018 Hallowest Tickets
+                                </p>
+                                <p class="news-time">
+                                    [2018-10-23]
+                                </p>
+                            </div>
+                        </li>
+                        <li class="news clearfix">
+                            <div class="news-pic">
+                                <img src="img/img32.png" alt="">
+                            </div>
+                            <div class="news-details">
+                                <h3 class="news-title special-font">收下这份万圣西部夜着装指南</h3>
+                                <p class="news-summary">
+                                    如何在万圣夜里大放异彩？收下这份时尚着装指南，用你的「鬼」点子，吹起浓浓西部风，Hallowest! Dress your best!
+                                </p>
+                                <p class="news-time">
+                                    [2018-10-21]
+                                </p>
+                            </div>
+                        </li>
+                        <li class="news clearfix">
+                            <div class="news-pic">
+                                <img src="img/img33.png" alt="">
+                            </div>
+                            <div class="news-details">
+                                <h3 class="news-title special-font">织一张网，捕捉你眼底的光</h3>
+                                <p class="news-summary">
+                                    初秋九月，织一张温柔的网，捕捉你眼底的光。
+                                </p>
+                                <p class="news-time">
+                                    [2018-10-21]
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="w1200 content  special-font">
+            <div class="contact-info">
+                <h3 class="company">池州名文教育咨询有限公司</h3>
+                <div class="company-info">
+                    <div class="info-item school-addr clearfix">
+                        <div class="name">
+                            学校地址：
+                        </div>
+                        <div class="addr">
+                            <p>旗舰校（徐汇区华山路1751号海斯大厦L3）</p>
+                            <p>中星城校（徐汇区柳州路99号中星城商场L3）</p>
+                            <p>时光里校（徐汇区瑞平路230号保利时光里L2/009-012）</p>
+                        </div>
+                    </div>
+                    <p class="info-item tel">联系电话：400-6666-321，021-51688986</p>
+                    <p class="info-item email">联系邮箱：service@egiraffe.com.cn</p>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright © 2018 池州长颈鹿美语 <a href="#">苏ICP备18005795号-1</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        /* 分页 */
+        // 函数--渲染模板
+        function simpleTemplating(data) {
+            var html = '<ul class="news-list">';
+            $.each(data, function (index, item) {
+                // html结构---没有使用模板引擎拼接字符串
+                html += '<li class="news clearfix">' +
+                    '       <div class="news-pic">' +
+                    '           <img src="img/img30.png" alt="">' +
+                    '       </div>' +
+                    '       <div class="news-details">' +
+                    '           <h3 class="news-title special-font">主题教学 | 万圣节要怎么玩才尽兴？</h3>' +
+                    '           <p class="news-summary">' +
+                    '               10/20~10/26 GIRAFFE万圣节主题教学进行中尽情释放心中的「小捣蛋鬼」提前欢享万圣节的精彩' +
+                    '           </p>' +
+                    '           <p class="news-time">' +
+                    '               [2018-10-23]' +
+                    '           </p>' +
+                    '       </div>' +
+                    '   </li>'
+            });
+            html += '</ul>';
+            return html;
+        }
+        // 渲染数据并初始化
+        $('#pagination-container').pagination({
+            dataSource: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],//可以为对象数组--存着每条新闻的数据
+            pageSize:4,//每页显示条目
+            // prevText:"上一页",
+            // nextText:"下一页",
+            className: 'paginationjs-theme-blue',//分页器内置样式类名
+            callback: function (data, pagination) { //调用定义的渲染模板和数据渲染页面
+                var html = simpleTemplating(data);
+                $('#data-container').html(html);
+            }
+        })
+    </script>
+</body>
+
+</html>

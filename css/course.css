@@ -1,0 +1,96 @@
+/* 开设课程相关页 样式*/
+/* 幼儿英语页 start */
+.course_main .column-wrapper .column1 .column-content {
+  margin-top: 20px;
+}
+.course_main .column-wrapper .column1 .column-content > p {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #666666;
+  margin-top: 30px;
+  text-indent: 2em;
+}
+.course_main .column-wrapper .column1 .column-content > p:nth-child(1) {
+  margin-top: 0;
+}
+.course_main .column-wrapper .column2 {
+  margin: 60px auto 100px;
+}
+.course_main .column-wrapper .column2 .column-content {
+  margin-top: 60px;
+  text-align: center;
+}
+.course_main .column-wrapper .column2 .column-content .tab-hd {
+  display: inline-block;
+}
+.course_main .column-wrapper .column2 .column-content .tab-hd .tab {
+  float: left;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  font-family: PingFang-SC-Bold;
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  background-color: #cccccc;
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 50px;
+  cursor: pointer;
+}
+.course_main .column-wrapper .column2 .column-content .tab-hd .tab:nth-child(3) {
+  margin-right: 0;
+}
+.course_main .column-wrapper .column2 .column-content .tab-hd .tab-cur {
+  background-color: #ef6d01;
+}
+.course_main .column-wrapper .column2 .column-content .tab-bd {
+  margin-top: 45px;
+}
+.course_main .column-wrapper .column2 .column-content .tab-bd .tab-item {
+  display: none;
+  text-align: left;
+}
+.course_main .column-wrapper .column2 .column-content .tab-bd .tab-item > img {
+  float: right;
+  display: block;
+  width: 200px;
+  height: auto;
+}
+.course_main .column-wrapper .column2 .column-content .tab-bd .tab-item:nth-child(1) {
+  display: block;
+}
+.course_main .column-wrapper .column2 .column-content .tab-bd .tab-item .item {
+  margin-top: 30px;
+  letter-spacing: 0px;
+  line-height: 36px;
+}
+.course_main .column-wrapper .column2 .column-content .tab-bd .tab-item .item:nth-child(2) {
+  margin-top: 0;
+  padding-top: 25px;
+}
+.course_main .column-wrapper .column2 .column-content .tab-bd .tab-item .item .item-name {
+  font-size: 24px;
+  color: #ef6d01;
+}
+.course_main .column-wrapper .column2 .column-content .tab-bd .tab-item .item .item-value {
+  font-size: 18px;
+  color: #333333;
+}
+.course_main .column-wrapper .column2 .column-content .tab-bd .tab-item .item .item-subname {
+  display: block;
+  font-size: 20px;
+  color: #ef6d01;
+}
+.course_main .column-wrapper .column2 .column-content .tab-bd .tab-item .item .m_t {
+  margin-top: 30px;
+}
+.course_main .column-wrapper .column2 .column-content .tab-bd .tab-item .item .desc {
+  font-size: 18px;
+  color: #333333;
+}
+.course_main .column-wrapper .column2 .column-content .tab-bd .tab-item-cur {
+  display: block;
+}
+/* 幼儿英语页 end */

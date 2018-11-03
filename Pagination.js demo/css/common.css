@@ -7,12 +7,6 @@
   width: 1200px;
   margin: 0 auto;
 }
-.f_l {
-  float: left;
-}
-.f_r {
-  float: right;
-}
 img {
   vertical-align: middle;
 }
@@ -131,7 +125,7 @@ input:-ms-input-placeholder {
   text-align: center;
   color: #333;
 }
-.top-nav .nav-bar .r-nav .nav-item .menu {
+.top-nav .nav-bar .r-nav .nav-item .fw_menu {
   display: none;
   position: absolute;
   bottom: 0;
@@ -144,20 +138,20 @@ input:-ms-input-placeholder {
   overflow: hidden;
   z-index: 1000;
 }
-.top-nav .nav-bar .r-nav .nav-item .menu .menu_item {
+.top-nav .nav-bar .r-nav .nav-item .fw_menu .fw_item {
   width: 110px;
   text-align: center;
 }
-.top-nav .nav-bar .r-nav .nav-item .menu .menu_item > a {
+.top-nav .nav-bar .r-nav .nav-item .fw_menu .fw_item > a {
   display: block;
   height: 30px;
   line-height: 30px;
   font-size: 14px;
 }
-.top-nav .nav-bar .r-nav .nav-item .menu:nth-child(1) {
+.top-nav .nav-bar .r-nav .nav-item .fw_menu:nth-child(1) {
   margin-top: 0;
 }
-.top-nav .nav-bar .r-nav .nav-item .menu_item_cur .menu_item_link {
+.top-nav .nav-bar .r-nav .nav-item .fw_item_cur .fw_item_link {
   color: #ef6d01 !important;
 }
 .top-nav .nav-bar .r-nav .item-current .item_link {

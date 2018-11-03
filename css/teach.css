@@ -1,0 +1,227 @@
+/* 教材与教学相关页 样式 */
+/* 长颈鹿教材 start */
+.teach_main {
+  position: relative;
+}
+.teach_main .aside-nav {
+  position: absolute;
+  top: 110px;
+  left: 100px;
+  border: solid 1px #e1e1e1;
+}
+.teach_main .aside-nav .nav-tab {
+  width: 140px;
+  padding: 0 15px;
+  height: 44px;
+  line-height: 44px;
+  background-color: #fff;
+  border-bottom: solid 1px #e1e1e1;
+  cursor: pointer;
+}
+.teach_main .aside-nav .nav-tab:nth-child(4) {
+  border: none;
+}
+.teach_main .aside-nav .nav-tab .sjx {
+  display: inline-block;
+  margin-right: 5px;
+  width: 8px;
+  height: 8px;
+  background: url("../img/icon3.png") no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+}
+.teach_main .aside-nav .nav-tab .tab {
+  font-family: HiraginoSansGB-W3;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #999;
+  vertical-align: middle;
+}
+.teach_main .aside-nav .nav-tab-cur {
+  background-color: #ef6d01;
+}
+.teach_main .aside-nav .nav-tab-cur .sjx {
+  background: url("../img/icon4.png") no-repeat;
+}
+.teach_main .aside-nav .nav-tab-cur .tab {
+  font-size: 18px;
+  color: #fff!important;
+}
+.teach_main .fixed {
+  position: fixed;
+  top: 180px;
+  z-index: 1000;
+}
+.teach_main .column-wrapper .column1 .column-content {
+  margin-top: 50px;
+}
+.teach_main .column-wrapper .column1 .column-content > p {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #666666;
+  text-indent: 2em;
+}
+.teach_main .column-wrapper .column2 .column-content {
+  margin-top: 60px;
+  padding-bottom: 120px;
+}
+.teach_main .column-wrapper .column2 .column-content .type .type_name > .icon {
+  vertical-align: middle;
+}
+.teach_main .column-wrapper .column2 .column-content .type .type_name > .name {
+  display: inline-block;
+  font-family: PingFang-SC-Bold;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #149edb;
+  vertical-align: middle;
+  white-space: pre-line;
+  text-align: left;
+}
+.teach_main .column-wrapper .column2 .column-content .type .item-desc {
+  margin-top: 30px;
+  line-height: 36px;
+}
+.teach_main .column-wrapper .column2 .column-content .type .item-desc:nth-child(1) {
+  margin-top: 20px;
+}
+.teach_main .column-wrapper .column2 .column-content .type .item-desc .item-key {
+  font-size: 24px;
+  letter-spacing: 0px;
+  color: #ef6d01;
+}
+.teach_main .column-wrapper .column2 .column-content .type .item-desc .item-value {
+  font-size: 18px;
+  color: #333333;
+}
+.teach_main .column-wrapper .column2 .column-content .caterpillar > img {
+  margin-top: 80px;
+  margin-left: 15px;
+}
+.teach_main .column-wrapper .column2 .column-content .little-sun {
+  margin-top: 80px;
+}
+.teach_main .column-wrapper .column2 .column-content .little-sun > img {
+  margin-top: 14px;
+  margin-right: 15px;
+}
+.teach_main .column-wrapper .column2 .column-content .little-sun .type_name .name {
+  color: #37b57d;
+}
+.teach_main .column-wrapper .column2 .column-content .butterfly {
+  margin-top: 80px;
+}
+.teach_main .column-wrapper .column2 .column-content .butterfly > img {
+  margin-top: 67px;
+  margin-left: 15px;
+}
+.teach_main .column-wrapper .column2 .column-content .butterfly .type_name .name {
+  color: #ea7800;
+}
+.teach_main .column-wrapper .column2 .column-content .butterfly .item-desc .subkey {
+  font-size: 20px;
+  color: #ef6d01;
+}
+.teach_main .column-wrapper .column2 .column-content .allstars {
+  margin-top: 80px;
+}
+.teach_main .column-wrapper .column2 .column-content .allstars > img {
+  margin-top: 18px;
+  margin-right: 15px;
+}
+.teach_main .column-wrapper .column2 .column-content .allstars .type_name .name {
+  color: #d03119;
+}
+/* 长颈鹿教材 end */
+/* 特色教学法 start */
+.feature_main .column-wrapper .column1 .column-content > p {
+  text-indent: 0;
+}
+.feature_main .column-wrapper .column2 .column-content {
+  padding-bottom: 0;
+}
+.feature_main .column-wrapper .column3 .column-content {
+  margin-top: 60px;
+}
+.feature_main .column-wrapper .column3 .column-content .m_t {
+  margin-top: 40px;
+}
+.feature_main .column-wrapper .column3 .column-content .subtitle {
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0px;
+  color: #ef6d01;
+}
+.feature_main .column-wrapper .column3 .column-content .content {
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0px;
+  color: #666666;
+}
+.feature_main .column-wrapper .column4 .column-content {
+  margin-top: 60px;
+  padding-bottom: 120px;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0px;
+  color: #666666;
+}
+.feature_main .column-wrapper .column4 .column-content .summary {
+  text-indent: 2em;
+}
+.feature_main .column-wrapper .column4 .column-content .subkey {
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: #ef6d01;
+}
+/* 特色教学法 end */
+/* 多元化教学 start */
+.diversification_main {
+  position: relative;
+}
+.diversification_main .aside-nav .nav-tab {
+  width: 225px;
+}
+.diversification_main .column-wrapper .column1 .column-content {
+  margin-top: 60px;
+}
+.diversification_main .column-wrapper .column1 .column-content .content-item {
+  margin-top: 40px;
+}
+.diversification_main .column-wrapper .column1 .column-content .content-item:nth-child(1) {
+  margin-top: 0;
+}
+.diversification_main .column-wrapper .column1 .column-content .subtitle {
+  margin-top: 0;
+  font-family: PingFang-SC-Bold;
+  font-size: 24px;
+  line-height: 1em;
+  letter-spacing: 0px;
+  color: #f36d12;
+  text-align: left;
+}
+.diversification_main .column-wrapper .column1 .column-content .desc {
+  margin-top: 30px;
+}
+.diversification_main .column-wrapper .column1 .column-content .desc > p {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #666666;
+  text-indent: 2em;
+}
+.diversification_main .column-wrapper .column1 .column-content .desc .m_t {
+  margin-top: 10px;
+}
+.diversification_main .column-wrapper .column1 .column-content .desc .advantage {
+  margin-top: 30px;
+  text-align: center;
+}
+.diversification_main .column-wrapper .column3 .column-content {
+  padding-bottom: 80px;
+}
+/* 多元化教学 end */

@@ -1,9 +1,10 @@
 $(function () {
 
-    var index=$(".item-current").index();//获取当前nav tab的索引
-    var fwIndex=$(".fw_item_cur").index();//获取服务子菜单当前tab的索引
-    console.dir($(".fw_item"));
-    console.log(fwIndex);
+    var index = $(".item-current").index(); //获取当前nav tab的索引
+    var kcIndex = $(".kc_menu .menu_item_cur").index(); //获取服务子菜单当前tab的索引
+    var jxIndex = $(".jx_menu .menu_item_cur").index(); //获取服务子菜单当前tab的索引
+
+    console.dir($(".menu_item"));
     /* 顶部导航当前tab背景色切换*/
     $(".nav-item").on("mouseenter", function () {
         $(this).addClass("item-current").siblings().removeClass("item-current");
@@ -13,27 +14,41 @@ $(function () {
         $(".nav-item").eq(index).addClass("item-current").siblings().removeClass("item-current");
     });
 
-    // 顶部导航服务子菜单的显示隐藏
-    $(".nav-item-fw").on("mouseenter", function () {
-        $(".fw_menu").show();
-        //服务菜单当前项背景色切换
-        $(".fw_item").on("mouseenter", function () {
-            $(this).addClass("fw_item_cur").siblings().removeClass("fw_item_cur");
+    /* 子菜单显示隐藏 start */
+    // function：顶部导航tab子菜单的显示、隐藏--参数1：导航栏tab选择器，参数2：子菜单选择器
+    function toggleMenu(selector1, selector2) {
+        $(selector1).on("mouseenter", function () {
+            $(selector2).show();
         });
-    });
-    $(".nav-item-fw").on("mouseleave", function () {
-        $(".fw_menu").hide();
-        // 鼠标移出服务子菜单默认显示当前tab
-        $(".fw_item").removeClass("fw_item_cur").eq(fwIndex).addClass("fw_item_cur");
-    });
+        $(selector1).on("mouseleave", function () {
+            $(selector2).hide();
+        });
+    }
+    // function：子菜单显示时当前项背景色切换-参数1：子菜单tab选择器，参数2：当前项样式类名
+    function changeCur(selector1, className) {
+        $(selector1).on("mouseenter", function () {
+            $(this).addClass(className).siblings().removeClass(className);
+        });
+    }
+    // function：子菜单隐藏后返回子菜单当前tab-参数1：导航栏tab选择器，参数2：子菜单tab选择器，参数3：当前样式类名，参数4：当前子菜单tab的index
+    function backCurTab(selector1, selector2, className, index) {
+        $(selector1).on("mouseleave", function () {
+            $(selector2).removeClass(className).eq(index).addClass(className);
+        });
+    }
+    toggleMenu(".nav-item-kc", ".kc_menu");
+    toggleMenu(".nav-item-jx", ".jx_menu");
+    changeCur(".kc_item","menu_item_cur");
+    changeCur(".jx_item","menu_item_cur");
+    backCurTab(".nav-item-kc",".kc_item","menu_item_cur",kcIndex);
+    backCurTab(".nav-item-jx",".jx_item","menu_item_cur",jxIndex);
+    /* 子菜单显示隐藏 end */
 
-
-    // 初始化swipper      
+    /* swiper start*/
+    // 初始化swiper      
     var mySwiper = new Swiper('#swiper1', {
         direction: 'horizontal', // 垂直切换选项
         loop: true, // 循环模式选项
-
-        // 如果需要分页器
         pagination: {
             el: '#swiper-pagination',
             clickable: true,
@@ -62,6 +77,7 @@ $(function () {
         $("#swiper1 .swiper-button-prev").fadeOut(1000);
         return false;
     });
+    /* swiper end*/
 
 
 });

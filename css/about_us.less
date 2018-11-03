@@ -1,0 +1,347 @@
+/* 关于长颈鹿页样式 start */
+.f_l{
+    float: left;
+}
+.f_r{
+    float: right;
+}
+.about_main{
+    position: relative;
+    .aside-nav{
+        position: absolute;
+        top: 136px;
+        left: 137px;
+        border: solid 1px #e1e1e1;
+        .nav-tab{
+            width: 140px;
+            height: 44px;
+            padding: 0 15px;
+            line-height: 44px;
+            background-color: #fff;
+            border-bottom: solid 1px #e1e1e1;
+            cursor: pointer;
+            &:nth-child(4){
+                border: none;
+            }
+            .sjx{
+                display: inline-block;
+                margin-right: 5px;
+                width: 8px;
+                height: 8px;
+                background: url("../img/icon3.png")no-repeat;
+                background-size: cover;
+                vertical-align: middle;
+            }
+            .tab{
+                font-family: HiraginoSansGB-W3;
+                font-size: 16px;
+                letter-spacing: 0px;
+                color: #999;
+                vertical-align: middle;
+            }
+        }
+        .nav-tab-cur{
+            background-color: #ef6d01;
+            .sjx{
+                background: url("../img/icon4.png")no-repeat;
+            }
+            .tab{
+                font-size: 18px;
+                color: #fff!important;
+                }
+        }
+        
+    }
+    .fixed{
+        position: fixed;
+        top: 207px;
+        z-index: 1000;
+    }
+    .column-wrapper{
+        .column1{
+            padding:90px 0 60px;
+            .company-pic{
+                float: left;
+                margin-right: 40px;
+            } 
+            .company-intro{
+                // float: left;
+                .name{
+                    margin-top: 10px;
+                    font-family: PingFang-SC-Bold;
+                    font-size: 36px;
+                    line-height: 1em;
+                    letter-spacing: 0px;
+                    color: #333333;
+                }
+                .english{
+                    margin-top: 20px;
+                    font-size: 20px;
+                    line-height: 1em;
+                    letter-spacing: 0px;
+                    color: #999999;
+                }
+                .introduction{
+                    margin-top: 20px;
+                    font-size: 18px;
+                    line-height: 30px;
+                    letter-spacing: 0px;
+                    color: #666666;
+                }
+            }
+        }
+        .column2{
+            padding: 60px 0 50px;
+            .intro{
+                .intro-title{
+                    margin-top: 50px;
+                    font-size: 28px;
+                    line-height: 1em;
+                    letter-spacing: 0px;
+                    color: #333333;
+                }
+                .intro-desc{
+                    margin-top: 20px;
+                    font-size: 18px;
+                    line-height: 30px;
+                    letter-spacing: 0px;
+                    color: #999999;
+                }
+            }
+            .pic{
+                margin-left: 40px;
+            }
+        }
+        .column3{
+            padding-top:60px;
+            .cloumn-row{
+                &:nth-child(1){
+                    .pic{
+                        margin-right: 40px;
+                    }
+                }
+                &:nth-child(2){
+                    margin-top: 88px;
+                    .intro{
+                        padding-top: 20px;
+                        .intro-desc{
+                            &:nth-child(1){
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                    .pic{
+                        margin-left: 40px;
+                    }
+                }
+                .intro{
+                    .intro-title{
+                        padding-top:40px; 
+                        font-size: 28px;
+                        line-height: 1em;
+                        letter-spacing: 0px;
+                        color: #333333;
+                    }
+                    .intro-desc{
+                        margin-top: 20px;
+                        font-size: 18px;
+                        line-height: 30px;
+                        letter-spacing: 0px;
+                        color: #999999;
+                    }
+                }
+            }
+        }
+        .column4{
+            padding: 60px 0 45px;
+            .cloumn-row{
+                .intro{
+                    .intro-title{
+                        padding-top: 0;
+                    }
+                }
+            }
+            
+        }
+        .column5{
+            padding:90px 0 10px; 
+            .column-content {
+                position: relative;
+                margin-top: 50px;
+                .column5-desc{
+                    font-size: 18px;
+                    line-height: 30px;
+                    letter-spacing: 0px;
+                    color: #666666;
+                    text-indent: 2em;
+                    margin-bottom: 90px;
+                }
+                .teacher-swiper-box{
+                    position: relative;
+                    .teacher-swiper {
+                        width: 960px;
+                        margin: 0 auto;
+                        .slide {
+                            .item-teacher {
+                                .teacher-photo {
+                                    float: left;
+                                    margin-right: 50px;
+                                }
+                                .teacher-profile {
+                                    float: left;
+                                    width: 730px;
+                                    letter-spacing: 0px;
+                                    .name {
+                                        margin-top: 20px;
+                                        font-family: PingFang-SC-Bold;
+                                        font-size: 28px;
+                                        line-height: 1em;
+                                        color: #333333;
+                                    }
+                                    .slogan {
+                                        margin-top: 8px;
+                                        font-size: 16px;
+                                        line-height: 1em;
+                                        color: #666666;
+                                    }
+                                    .motto {
+                                        margin-top: 20px;
+                                        font-size: 18px;
+                                        line-height: 30px;
+                                        color: #333333;
+                                        text-align: justify;
+                                    }
+                                }
+                                &:nth-child(2) {
+                                    margin-top: 70px;
+                                }
+                            }
+                        }
+                    }
+                    // .btn-more {
+                    //     display: block;
+                    //     margin: 80px auto 110px;
+                    //     width: 180px;
+                    //     height: 50px;
+                    //     font-family: PingFang-SC-Bold;
+                    //     font-size: 20px;
+                    //     line-height: 50px;
+                    //     letter-spacing: 0px;
+                    //     color: #ef6d01 !important;
+                    //     border-radius: 5px;
+                    //     border: solid 1px #fb8e33;
+                    //     text-align: center;
+                    //     cursor: pointer;
+                    // }
+                    .swiper-button-next,
+                    .swiper-button-prev {
+                        width: 36px;
+                        height: 36px;
+                        background-color: rgba(255, 255, 255, .4);
+                        outline: none;
+                    }
+                    .swiper-button-next {
+                        right: 0;
+                        background: url("../img/icon1.png")no-repeat;
+                        background-size: cover;
+                    }
+                    .swiper-button-prev {
+                        left: 0;
+                        background: url("../img/icon2.png")no-repeat;
+                        background-size: cover;
+                    }
+                }
+
+            }
+        }
+        .column6{
+            padding: 100px 0;
+            .column-content{
+                position: relative;
+                margin-top: 60px;
+                .tab-hd{
+                    display: inline-block;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    .tab{
+                        float: left;
+                        width: 160px;
+                        height: 50px;
+                        line-height: 50px;
+                        font-family: PingFang-SC-Bold;
+                        font-size: 20px;
+                        letter-spacing: 0px;
+                        color: #ffffff;
+                        background-color: #cccccc;
+                        border-radius: 5px;
+                        text-align: center;
+                        cursor: pointer;
+                        &:nth-child(1){
+                            margin-right: 105px;
+                        }
+                    }
+                    .tab-cur{
+                        background-color: #ef6d01;
+                    }
+                }
+                .tab-bd{
+                    padding-top:100px; 
+                    .tab-item{
+                        display: none;
+                        .big-pic{
+                            margin: 0 auto;
+                            width: 720px;
+                            &>img{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                        .photoSwiper-container{
+                            margin-top: 80px;
+                            position: relative;
+                            .photoSwiper{
+                                width: 1030px;
+                                .swiper-slide{
+                                    text-align: center;
+                                    box-sizing: content-box;
+                                }
+                                .swiper-slide-active{
+                                    border: solid 2px #ef6d01!important;
+                                }
+                            }
+                            .swiper-button-next,
+                            .swiper-button-prev {
+                                width: 18px;
+                                height: 32px;
+                                outline: none;
+                                background-color: rgba(255, 255, 255, .4);
+                            }
+                            .swiper-button-next {
+                                right: 0;
+                                background: url("../img/icon5.png")no-repeat;
+                                background-size: cover;
+                            }
+                            .swiper-button-prev {
+                                left: 0;
+                                background: url("../img/icon6.png")no-repeat;
+                                background-size: cover;
+                            }
+                        }
+                    }
+                    .tab-item-cur{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .shallow-bg{
+        background-color: #f9f9f9;
+    }
+    .slide-cur{
+        border: solid 2px #ef6d01!important;
+    }
+}
+/* 关于长颈鹿页样式 end */

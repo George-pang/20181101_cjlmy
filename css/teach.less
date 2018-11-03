@@ -1,0 +1,273 @@
+/* 教材与教学相关页 样式 */
+
+/* 长颈鹿教材 start */
+.teach_main{
+    position: relative;
+    .aside-nav{
+        position: absolute;
+        top: 110px;
+        left: 100px;
+        border: solid 1px #e1e1e1;
+        .nav-tab{
+            width: 140px;
+            padding: 0 15px;
+            height: 44px;
+            line-height: 44px;
+            background-color: #fff;
+            border-bottom: solid 1px #e1e1e1;
+            cursor: pointer;
+            &:nth-child(4){
+                border: none;
+            }
+            .sjx{
+                display: inline-block;
+                margin-right: 5px;
+                width: 8px;
+                height: 8px;
+                background: url("../img/icon3.png")no-repeat;
+                background-size: cover;
+                vertical-align: middle;
+            }
+            .tab{
+                font-family: HiraginoSansGB-W3;
+                font-size: 16px;
+                letter-spacing: 0px;
+                color: #999;
+                vertical-align: middle;
+            }
+        }
+        .nav-tab-cur{
+            background-color: #ef6d01;
+            .sjx{
+                background: url("../img/icon4.png")no-repeat;
+            }
+            .tab{
+                font-size: 18px;
+                color: #fff!important;
+                }
+        }
+        
+    }
+    .fixed{
+        position: fixed;
+        top: 180px; //+顶部导航
+        z-index: 1000;
+    }
+    .column-wrapper{
+        .column1{
+            .column-content{
+                margin-top: 50px;
+                &>p{
+                    font-size: 18px;
+                    line-height: 30px;
+                    letter-spacing: 0px;
+                    color: #666666;
+                    text-indent: 2em;
+                }
+            }
+        }
+        .column2{
+            .column-content{
+                margin-top: 60px;
+                padding-bottom:120px; 
+                .type{
+                    .type_name{
+                        &>.icon{
+                            vertical-align: middle;
+                        }
+                        &>.name{
+                            display: inline-block;
+                            font-family: PingFang-SC-Bold;
+                            font-size: 24px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            letter-spacing: 0px;
+                            color: #149edb;
+                            vertical-align: middle;
+                            white-space: pre-line;
+                            text-align: left;
+                        }
+                    }
+                    .item-desc{
+                        margin-top: 30px;
+                        line-height: 36px;
+                        &:nth-child(1){
+                            margin-top: 20px;
+                        }
+                        .item-key{
+                            font-size: 24px;
+                            letter-spacing: 0px;
+                            color: #ef6d01;
+                        }
+                        .item-value{
+                            font-size: 18px;
+                            color: #333333;
+                        }
+                    }
+                }
+                .caterpillar{
+                    &>img{
+                        margin-top: 80px;
+                        margin-left: 15px;
+                    }
+                }
+                .little-sun{
+                    margin-top: 80px;
+                    &>img{
+                        margin-top: 14px;
+                        margin-right: 15px;
+                    }
+                    .type_name{
+                        .name{
+                            color: #37b57d;
+                        }
+                    }
+                }
+                .butterfly{
+                    margin-top: 80px;
+                    &>img{
+                        margin-top: 67px;
+                        margin-left: 15px;
+                    }
+                    .type_name{
+                        .name{
+                            color: #ea7800;
+                        }
+                    }
+                    .item-desc{
+                        .subkey{
+                            font-size: 20px;
+                            color: #ef6d01;
+                        }
+                    }
+                }
+                .allstars{
+                    margin-top: 80px;
+                    &>img{
+                        margin-top: 18px;
+                        margin-right: 15px;
+                    }
+                    .type_name{
+                        .name{
+                            color: #d03119;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* 长颈鹿教材 end */
+
+/* 特色教学法 start */
+.feature_main{
+    .column-wrapper{
+        .column1{
+            .column-content{
+                &>p{
+                    text-indent: 0;
+                }
+            }
+        }
+        .column2{
+            .column-content{
+                padding-bottom: 0;
+            }
+        }
+        .column3{
+            .column-content{
+                margin-top: 60px;
+                .m_t{
+                    margin-top: 40px;
+                }
+                .subtitle{
+                    font-size: 24px;
+                    line-height: 36px;
+                    letter-spacing: 0px;
+                    color: #ef6d01;
+                }
+                .content{
+                    font-size: 18px;
+                    line-height: 36px;
+                    letter-spacing: 0px;
+                    color: #666666;
+                }
+            }
+        }
+        .column4{
+            .column-content{
+                margin-top: 60px;
+                padding-bottom: 120px;
+                font-size: 18px;
+                line-height: 36px;
+                letter-spacing: 0px;
+                color: #666666; 
+                .summary{
+                    text-indent: 2em;
+                }
+                .subkey{
+                    font-size: 24px;
+                    font-weight: normal;
+                    letter-spacing: 0px;
+                    color: #ef6d01;
+                }
+            }
+        }
+    }
+}
+/* 特色教学法 end */
+
+/* 多元化教学 start */
+.diversification_main{
+    position: relative;
+    .aside-nav{
+        .nav-tab{
+            width: 225px;
+        }
+    }
+    .column-wrapper{
+        .column1{
+            .column-content{
+                margin-top: 60px;
+                .content-item{
+                    margin-top: 40px;
+                    &:nth-child(1){
+                        margin-top: 0;
+                    }
+                }
+                .subtitle{
+                    margin-top: 0;
+                    font-family: PingFang-SC-Bold;
+                    font-size: 24px;
+                    line-height: 1em;
+                    letter-spacing: 0px;
+                    color: #f36d12;
+                    text-align: left;
+                }
+                .desc{
+                    margin-top: 30px;
+                    &>p{
+                        font-size: 18px;
+                        line-height: 30px;
+                        letter-spacing: 0px;
+                        color: #666666;
+                        text-indent: 2em;
+                    }
+                    .m_t{
+                        margin-top: 10px;
+                    }
+                    .advantage{
+                        margin-top: 30px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .column3{
+            .column-content{
+                padding-bottom: 80px;
+            }
+        }
+    }
+}
+/* 多元化教学 end */
