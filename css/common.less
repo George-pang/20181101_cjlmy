@@ -34,6 +34,7 @@ body {
     font-family: PingFang-SC-Regular;
     font-size: 14px;
     padding-top: 70px;
+    min-width: 1366px;
 }
 
 h1,
@@ -194,6 +195,8 @@ input:-ms-input-placeholder {
 
 .banner {
     position: relative;
+    width: 100%;
+    overflow: hidden;//因为banner图宽度过长，为了防止影响body宽度，所以需要溢出隐藏--另外最好采取背景图的形式来解决
     text-align: center;
     .swiper-container {
         // height: 590px;
